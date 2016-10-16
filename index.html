@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <h1>Калькулятор расчета стоимости ввоза товара в Украину</h1>
+
+    <form action="#" method="get" name="tax-calculation">
+        <label>
+            Стоимость товара, &#8364 <input type="text" name="price" id="price-field" autocomplete="off">
+        </label>
+    </form>
+
+    <div>
+        <p class="input-name">Размер налога, &#8364 </p>
+        <span id="tax-field"></span>
+    </div>
+
+    <div>
+        <p class="input-name">Итого, &#8364 </p>
+        <span id="sum-field"></span>
+    </div>
+
+    <p class="explanation"> Суммой налогообложения на которую начисляются таможенная пошлина и НДС,
+        является сумма после 150 ЕВРО. Например товар стоит 151 ЕВРО, пошлина и НДС будет начисляться на 1 ЕВРО.
+        То есть 1 ЕВРО * 10% пошлины = 0,1 ЕВРО – это пошлина. (1 ЕВРО + 0,1 ЕВРО пошлина) * 20% НДС = 0,22 ЕВРО – это НДС.
+        Итого 0,32 ЕВРО таможенных платежей (пошлина 0,1 ЕВРО + НДС 0,22 ЕВРО). </p>
+    <script src="js/script.js"></script>
+</body>
+</html>

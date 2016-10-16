@@ -1,0 +1,29 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #444444;
+}
+
+.input-name, #tax-field, #sum-field {
+    display: inline-block;
+}
+
+input[type="text"] {
+    height: 26px;
+}
+
+.input-name {
+    width: 163px;
+    height: 26px;
+    /*background-color: #e5e5e5;*/
+}
+
+.explanation {
+    text-align: justify;
+    font-size: 12px;
+    width: 490px;
+}
